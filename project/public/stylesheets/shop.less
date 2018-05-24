@@ -137,6 +137,7 @@ a {
   padding: 0px 0px 0px 5px;
   float: left;
 }
+
 .wrap .main .mainMain .mainMainLeft .leftTop .lefttopBottom .lefttopBottomTop .top .topCenter a img {
   width: 100%;
   height: 75px;
@@ -359,32 +360,19 @@ a {
   float: left;
   margin-bottom: 40px;
   position: relative;
-}
-.wrap .main .mainMain .mainMainRight #getli li:before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 78%;
-  left: 0;
-  bottom: 87px;
-  background: #9B9090;
-  opacity: 0.5;
-  z-index: 2;
-  transition: all .4s;
-  transform: scale(1, 0);
-}
-.wrap .main .mainMain .mainMainRight #getli li:hover:before {
-  content: '';
-  transform: scale(1, 1);
+&:before{content:"";position:absolute;width:100%;height:78%;left:0;bottom: 87px;background:#9B9090;opacity:0.5;z-index:2;transition:all .4s;transform:scale(1,0);}
+    &:hover:before{content:'';transform:scale(1,1)}
+
 }
 .wrap .main .mainMain .mainMainRight #getli li img {
   width: 100%;
-  margin-bottom: 25px;
-  transition: all 0.5s;
+margin-bottom: 25px;
+transition: all 0.5s;
 }
 .wrap .main .mainMain .mainMainRight #getli li .content {
   width: 100%;
   height: 58px;
+
 }
 .wrap .main .mainMain .mainMainRight #getli li .content .content_1 {
   font-size: 16px;
@@ -419,26 +407,9 @@ a {
   float: left;
   margin-right: 30px;
   position: relative;
-}
-.wrap .main .mainMain .mainMainRight #getul li .left:before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  left: 0;
-  bottom: 0;
-  background: #B4B4B4;
-  opacity: 0.5;
-  z-index: 2;
-  transition: all .4s;
-  transform: scale(1, 0);
-}
-.wrap .main .mainMain .mainMainRight #getul li .left:hover:before {
-  content: '';
-  transform: scale(1, 1);
-}
-.wrap .main .mainMain .mainMainRight #getul li .left img {
-  width: 100%;
+    &:before{content:"";position:absolute;width:100%;height:100%;left:0;bottom: 0;background:#B4B4B4;opacity:0.5;z-index:2;transition:all .4s;transform:scale(1,0);}
+    &:hover:before{content:'';transform:scale(1,1)}
+    img{width:100%;}
 }
 .wrap .main .mainMain .mainMainRight #getul li .right {
   border-bottom: 1px dotted #a4a4a4;
@@ -466,15 +437,22 @@ a {
   height: 40px;
 }
 .wrap .main .mainMain .mainMainRight #getul li .right .content_4 a {
+
   border: 1px solid #125f06;
   width: 40px;
-  height: 40px;
+  height:40px;
   margin-right: 15px;
-  display: block;
+  display:block;
   float: left;
   text-align: center;
   line-height: 40px;
 }
+// .wrap .main .mainMain .mainMainRight #getul li .right .content_4 .img_gwc {
+//  background: url('../images/gwcl.png') no-repeat center;
+// }
+// .wrap .main .mainMain .mainMainRight #getul li .right .content_4 .img_jt {
+//  background: url('../images/jtl.png') no-repeat center;
+// }
 .wrap .main .mainMain .mainMainRight #getul li .right .content_4 a img {
   width: 16px;
   margin-bottom: 0px;

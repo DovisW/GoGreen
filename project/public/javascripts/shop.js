@@ -32,5 +32,11 @@ $(function(){
 		$('.fl4').css('background','none')
 	})
 
+	$('.getli').mouseover(function(){
+		$('.img_1').css('box-shadow','-10px 10px 0px #125f06');
+	})
+	$('.getli').mouseout(function(){
+		$('.img_1').css('box-shadow','none');
+	})
 
 })
