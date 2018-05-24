@@ -47,14 +47,14 @@ function fun(){
 timer = setInterval(fun,3000);
 
 $(function(){
-	var flog = 5 ;
+	var flog = 4 ;
 	$('.button_Previous').click(function(){
 		flog--;
 		var num = flog*(-300)+'px';
 		$('.best_banner_content').stop(true,false).animate({'left':num},'slow',function(){
 			if(flog<0){
-				$('.best_banner_content').css('left','-1500px');
-				flog = 5;
+				$('.best_banner_content').css('left','-900px');
+				flog = 3;
 			}
 		})
 	})
@@ -63,9 +63,15 @@ $(function(){
 		var num = flog*(-300)+'px';
 		$('.best_banner_content').stop(true,false).animate({'left':num},'slow',function(){
 			if(flog>12){
-				$('.best_banner_content').css('left','-1500px');
-				flog = 5;
+				$('.best_banner_content').css('left','-900px');
+				flog = 3;
 			}
 		})
 	})
+	$('#container').sliphover({
+		height:'100%',
+		target:'img',
+		duration:'fast',
+		backgroundColor:'rgba(18,95,6,0.5)'
+	});
 })

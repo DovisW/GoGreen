@@ -1,16 +1,16 @@
 var express = require('express');
 var router = express.Router();
-var mysql = require('mysql');
-var connection = mysql.createConnection({
-  host     : 'localhost',//主机名
-  user     : 'root',//用户名
-  password : '123456',//密码
-  database : 'test'
-});
+// var mysql = require('mysql');
+// var connection = mysql.createConnection({
+//   host     : 'localhost',//主机名
+//   user     : 'root',//用户名
+//   password : '123456',//密码
+//   database : 'test'
+// });
 
- // 连接mysql数据库
-connection.connect();
-console.log('数据库连接成功');
+//  // 连接mysql数据库
+// connection.connect();
+// console.log('数据库连接成功');
 /* GET home page. */
 
 router.get('/', function(req, res, next) {
