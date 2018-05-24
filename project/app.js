@@ -5,12 +5,14 @@ var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 var ejs = require('ejs');
 
-var shopRouter = require('./routes/shop');
+// var shopRouter = require('./routes/shop');
 // var usersRouter = require('./routes/users');
-var contactRouter = require('./routes/contact');
+// var contactRouter = require('./routes/contact');
 var indexRouter=require('./routes/index');
 var aboutRouter=require('./routes/about');
 var shopDetailRouter=require('./routes/shopDetail');
+// var contactRouter = require('./routes/contact');
+
 
 
 var app = express();
@@ -26,10 +28,10 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.use('/', indexRouter);
-app.use('/shop', shopRouter);
+// app.use('/', indexRouter);
+// app.use('/shop', shopRouter);
 // app.use('/users', usersRouter);
-app.use('/contact', contactRouter);
+// app.use('/contact', contactRouter);
 app.use('/index',indexRouter);
 app.use('/about', aboutRouter);
 app.use('/shopDetail',shopDetailRouter);

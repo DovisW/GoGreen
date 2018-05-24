@@ -8,7 +8,7 @@
 	<link rel="stylesheet" href="stylesheets/bootstrap.min.css">
 	<link rel="stylesheet" href="stylesheets/font-awesome.min.css">
 	<script src="javascripts/jquery-1.11.1.min.js"></script>
-	<script src="javascripts/script.js"></script>
+	<script src="javascripts/shop-and-about.js"></script>
 	
 </head>
 <body>
@@ -33,15 +33,15 @@
 				</div>
 				<div class="show flearfix">
 					<i class=" icon-remove"></i>
-					<div class="afterColor"><img src="images/about_img/tea1.jpg" alt=""></div>
-					<p>Orange and Raspberry Detox Water</p>
-					<p style="margin: 0 ;height: 24px; text-align: right;line-height: 24px; color: #125F06;" >1 × $16.00</p>
+					<div class="afterColor"><img alt=""></div>
+					<p class="p1"></p>
+					<p style="margin: 0 ;height: 24px; text-align: right;line-height: 24px; color: #125F06;" class="p2"></p>
 				</div>
 				<div class="show flearfix">
 					<i class="icon-remove"></i>
-					<div class="afterColor"><img src="images/about_img/tea2.jpg" alt=""></div>
-					<p>Vitamin Tangy Detox Smoothies</p>
-					<p style="margin: 0 ;height: 24px; text-align: right;line-height: 24px; color: #125F06;" >1 × $18.00</p>
+					<div class="afterColor"><img alt=""></div>
+					<p class="p1"></p>
+					<p style="margin: 0 ;height: 24px; text-align: right;line-height: 24px; color: #125F06;" class="p2"></p>
 				</div>
 				<div class="wrapper-total clearfix">
 					<span class="text-total fl">SUBTOTAL:</span>
@@ -195,16 +195,16 @@
 								</ul>
 							</div>
 							<div class="inputBox">
-								<div class="input_text clearfix">
-									<div class="left fl"><input type="text"></div>
-									<div class="right fl"><input type="email"></div>
-								</div>
-								<div class="textBox">
-									<textarea name="" id="" cols="30" rows="10"></textarea>
-								</div>
-								<button class="formBtn">
-									Send Review
-								</button>
+								<form action="" method="get" id="inputSub">
+									<div class="input_text clearfix">
+										<div class="left fl"><input type="text" name='text' placeholder="Type your name"></div>
+										<div class="right fl"><input type="email" name='email' id="emailPut" placeholder="Type your name"></div>
+									</div>
+									<div class="textBox">
+										<textarea name="liuyan" id="" cols="30" rows="10"></textarea>
+									</div>
+									<input type="submit" class="formBtn" value="Send Review">
+								</form>
 							</div>
 						</div>
 					</div>

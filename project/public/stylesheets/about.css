@@ -15,11 +15,11 @@ li {
   float: right;
 }
 @font-face {
-  src: url('FrederickatheGreat-Regular.ttf');
+  src: url('../font/FrederickatheGreat-Regular.ttf');
   font-family: A;
 }
 @font-face {
-  src: url('Dosis-Light.ttf');
+  src: url('../font/Dosis-Light.ttf');
   font-family: B;
 }
 .wrap {
