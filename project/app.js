@@ -8,8 +8,8 @@ var ejs = require('ejs');
 var shopRouter = require('./routes/shop');
 var usersRouter = require('./routes/users');
 var contactRouter = require('./routes/contact');
-
-
+var aboutRouter=require('./routes/about');
+var shopDetailRouter=require('./routes/about');
 
 
 var app = express();
@@ -29,7 +29,8 @@ app.use('/', shopRouter);
 app.use('/shop', shopRouter);
 app.use('/users', usersRouter);
 app.use('/contact', contactRouter);
-
+app.use('/about', aboutRouter);
+app.use('/shopDetail',shopDetailRouter);
 
 
 // catch 404 and forward to error handler
