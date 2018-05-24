@@ -15,11 +15,11 @@ li {
   float: right;
 }
 @font-face {
-  src: url('../font/FrederickatheGreat-Regular.ttf');
+  src: url('FrederickatheGreat-Regular.ttf');
   font-family: A;
 }
 @font-face {
-  src: url('../font/Dosis-Light.ttf');
+  src: url('Dosis-Light.ttf');
   font-family: B;
 }
 .wrap {
@@ -29,7 +29,7 @@ li {
 .AboutUs {
   width: 100%;
   height: 280px;
-  background-image: url(../images/about_bg.jpg);
+  background-image: url(../images/about_img/about_bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -110,7 +110,7 @@ li {
   content: '';
   width: 120px;
   height: 50px;
-  background-image: url(../images/small.png);
+  background-image: url(../images/about_img/small.png);
   background-repeat: no-repeat;
   background-position: center;
   z-index: -1;
@@ -191,7 +191,7 @@ li {
 }
 .peopleShow {
   width: 100%;
-  background-image: url(../images/show_bg.jpg);
+  background-image: url(../images/about_img/show_bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
