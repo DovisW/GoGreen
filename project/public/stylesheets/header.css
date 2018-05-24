@@ -51,6 +51,7 @@ div.wrap > .header .row div.row_right ul li a {
   line-height: 75px;
   color: #125F06;
   position: relative;
+  text-decoration: none;
 }
 div.wrap > .header .row div.row_right ul li a::before {
   content: "";
@@ -244,6 +245,7 @@ div.wrap > .footer .footer_top .footerToprow .footer_text .ft4 p:hover a {
 div.wrap > .footer .footer_top .footerToprow .footer_text .ft4 a {
   color: #474747;
   transition: all 0.3s;
+  text-decoration: none;
 }
 div.wrap > .footer .footer_bottom {
   width: 100%;
