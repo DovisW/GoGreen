@@ -5,6 +5,9 @@
 a {
   text-decoration: none;
 }
+a:hover{
+  text-decoration: none !important;
+}
 li {
   list-style: none;
 }
@@ -15,11 +18,11 @@ li {
   float: right;
 }
 @font-face {
-  src: url('FrederickatheGreat-Regular.ttf');
+  src: url('../font/FrederickatheGreat-Regular.ttf');
   font-family: A;
 }
 @font-face {
-  src: url('Dosis-Light.ttf');
+  src: url('../font/Dosis-Light.ttf');
   font-family: B;
 }
 .wrap {
@@ -239,74 +242,93 @@ li {
 .peopleShow .content .next {
   right: -20px;
 }
-.peopleShow .content #peopleDes {
+.fiexBox{
+    position: absolute;
+    width: 80%;
+    height: 70%;
+    top: 50%;
+    left: 50%;
+    margin-top: -130px;
+    margin-left: -40%;
+    overflow: hidden;
+}
+#peopleDes{
+  height: 100%;
   position: absolute;
-  width: 80%;
-  height: 70%;
-  top: 50%;
-  left: 50%;
-  margin-top: -130px;
-  margin-left: -40%;
-  display: -webkit-flex;
-  display: flex;
+  left: 0;
 }
-.peopleShow .content #peopleDes li {
-  -webkit-flex: 1;
-  flex: 1;
-  text-align: center;
-}
-.peopleShow .content #peopleDes li img {
-  width: 58%;
-  height: 43%;
-  overflow: hidden;
-  border-radius: 50%;
-}
-.peopleShow .content #peopleDes li img:hover {
-  border: 1px solid #125F06;
-}
-.peopleShow .content #peopleDes li #ative {
-  width: 156px;
-  height: 156px;
-}
-.peopleShow .content #peopleDes li ul {
-  width: 145px;
-  height: 35px;
-  margin: 20px auto 0;
-}
-.peopleShow .content #peopleDes li ul li {
+#peopleDes li{
   float: left;
-  width: 35px;
-  height: 35px;
+  width: 158px;
+  height: 100%;
+  margin:20px 20px 0 ; 
+  padding-top: 50px;
+}
+#peopleDes li div{
+  width: 70%;
+  margin: 0 auto;
   border-radius: 50%;
-  line-height: 35px;
-  background: #F0F0F0;
+  border:1px solid #125F06;
+  overflow: hidden;
 }
-.peopleShow .content #peopleDes li ul li i {
-  color: #464646;
+#peopleDes li div img{
+  width: 100%;
 }
-.peopleShow .content #peopleDes li ul li:not( :nth-child(2)) {
-  margin-right: 10px;
-  margin-left: 10px;
+
+#peopleDes .center{
+  padding-top: 0;
+  margin-top:0px; 
 }
-.peopleShow .content #peopleDes li ul li:hover {
+#peopleDes .center div{
+  width: 100%;
+}
+#peopleDes .center h3{
+      font-size: 19px;
+      font-family: "A";
+      color: #125f06;
+      margin-top:20px; 
+}
+#peopleDes .center h4{
+        font-size: 16px;
+       color: #898989;
+       text-align: center; 
+       margin: 0 0 5px 0;
+}
+#peopleDes .center ul{
+      width: 145px;
+      height: 35px;
+      margin: 0 auto 0;
+}
+#peopleDes .center ul li{
+        float: left;
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+        line-height: 35px;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+        background: #F0F0F0;
+
+}
+#peopleDes .center ul li:hover{
   background: #125F06;
 }
-.peopleShow .content #peopleDes li ul li:hover i {
+#peopleDes .center ul li:hover i{
   color: #fff;
 }
-.peopleShow .content #peopleDes li h3 {
-  font-size: 19px;
-  font-family: "A";
-  color: #125f06;
+#peopleDes .center ul li i{
+  color: #464646;
 }
-.peopleShow .content #peopleDes li h4 {
-  font-size: 16px;
-  color: #898989;
+#peopleDes .center ul li:not( :nth-child(2)){
+        margin-right: 10px;
+        margin-left: 10px;
 }
-.peopleShow .content #peopleDes li:not( :nth-child(3)) img {
-  margin-top: 50px;
-}
+
 @media screen and (min-width: 1200px) {
+  #peopleDes{
+    width: 2970px;
+  }
   .peopleShow {
     height: 720px;
   }
@@ -369,6 +391,7 @@ li {
     height: 500px;
     margin-right: 0px;
   }
+
 }
 @media screen and (min-width: 760px) and (max-width: 989px) {
   .About_text {
