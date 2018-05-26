@@ -1,15 +1,4 @@
 @charset "utf-8";
-@font-face {
-  src: url('../font/FrederickatheGreat-Regular.ttf');
-  font-family: Fredericka the Great;
-}
-@font-face {
-  src: url('../font/Dosis-Light.ttf');
-  font-family: Dosis;
-}
-body{
-  font-family: Dosis;
-}
 * {
   margin: 0;
   padding: 0;
@@ -47,17 +36,15 @@ a {
   border-bottom: 1px dashed #fff;
   border-top: 1px dashed #fff;
   text-align: center;
-
 }
 .wrap .main .mainTop .maintopContent .content h2 {
   font-size: 36px;
   color: #fff;
   margin-bottom: 10px;
   margin-top: 0px;
-  font-family:  Fredericka the Great;
 }
 .wrap .main .mainTop .maintopContent .content ul {
-  width: 178px;
+  width: 60%;
   margin: 0 auto;
 }
 .wrap .main .mainTop .maintopContent .content ul li {
@@ -166,8 +153,19 @@ a {
   background: #125f06;
   color: #fff;
 }
-@media screen and (max-width: 799px) {
-  .wrap .main .mainTop {
-    display: none;
-  }
+.wrap .fixed {
+  width: 40px;
+  height: 40px;
+  border: 2px solid #125F06;
+  position: fixed;
+  right: 20px;
+  bottom: 100px;
+  line-height: 40px;
+  text-align: center;
+  z-index: 99;
+}
+.wrap .fixed .a {
+  display: block;
+  width: 100%;
+  height: 100%;
 }

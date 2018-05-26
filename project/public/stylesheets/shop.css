@@ -490,9 +490,6 @@ a {
   .wrap .footer {
     display: none;
   }
-  .wrap .main .mainTop {
-    display: none;
-  }
 }
 .wrap .main .mainMain .mainMainRight #getul {
   width: 100%;
