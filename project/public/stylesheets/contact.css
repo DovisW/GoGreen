@@ -75,11 +75,11 @@ a {
   width: 100%;
 }
 .wrap .main .mainMain ul {
-  height: 212px;
+  display: fixed;
   margin-bottom: 80px;
 }
 .wrap .main .mainMain ul li {
-  height: 212px;
+  flex-grow: 1;
   background: url('../images/img_7.jpg') no-repeat center;
 }
 .wrap .main .mainMain ul li .content {
@@ -122,7 +122,7 @@ a {
   padding: 80px 0px;
 }
 .wrap .main .mainBottom .container .row {
-  width: 770px;
+  width: 70%;
   height: 100%;
   margin: 0 auto;
 }

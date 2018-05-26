@@ -4,13 +4,36 @@
 	<meta charset="UTF-8">
 	<title>GoGreen</title>
 	<link rel="stylesheet" href="stylesheets/shop.css">
+	<link rel="stylesheet" href="stylesheets/header.css">
+	<!-- <link rel="stylesheet" href="bootstrap/css/bootstrap.css"> -->
 	<script src="javascripts/jquery-1.11.1.min.js"></script>
 	<script src="javascripts/ajax.js"></script>
+	<!-- 加载高德地图 -->
+	<script type="text/javascript" src="https://webapi.amap.com/maps?v=1.4.4&npm;key=e3d5ec0ef396336248e4a00d7abc1869"></script> 
 </head>
 <body>
 	<div class="wrap">
-		<div class="header"></div>
-		<div class="main">
+		<div class="header" id="header">
+			<div class="row">
+				<div class="row_left">
+					<img src="images/index/header/hd1.png" alt="">
+				</div>
+				<div class="row_right">
+					<ul>
+						<li><a href="/index">Home</a></li>
+						<li><a href="/about">ABOUT</a></li>
+						<li><a href="/shop">SHOP</a></li>
+						<li><a href="/shopDetail">SHOP DETAIL</a></li>
+						<li><a href="/gallery">Gallery</a></li>
+						<li><a href="/contact">CONTACT</a></li>
+					</ul>
+				</div>
+				<div class="row_hamburger">
+					<div></div>
+				</div>
+			</div>
+		</div>
+		<div class="main" name="top" id="top">
 			<div class="mainTop">
 				<div class="miantopContent">
 					<div class="content">
@@ -201,77 +224,77 @@
 							</div>
 						</li>
 						<li class="getli">
-							<img src="" alt="" >
+							<img src="" alt="" class='img_1'>
 							<div class="content">
 								<p class="content_1"></p>
 								<p class="content_2"></p>
 							</div>
 						</li>
 						<li class="getli">
-							<img src="" alt="" id='img'>
+							<img src="" alt="" class="img_1">
 							<div class="content">
 								<p class="content_1"></p>
 								<p class="content_2"></p>
 							</div>
 						</li>
 						<li class="getli">
-							<img src="" alt="" id='img'>
+							<img src="" alt="" class="img_1">
 							<div class="content">
 								<p class="content_1"></p>
 								<p class="content_2"></p>
 							</div>
 						</li>
 						<li class="getli">
-							<img src="" alt="" id='img'>
+							<img src="" alt="" class="img_1">
 							<div class="content">
 								<p class="content_1"></p>
 								<p class="content_2"></p>
 							</div>
 						</li>
 						<li class="getli">
-							<img src="" alt="" id='img'>
+							<img src="" alt="" class="img_1">
 							<div class="content">
 								<p class="content_1"></p>
 								<p class="content_2"></p>
 							</div>
 						</li>
 						<li class="getli">
-							<img src="" alt="" id='img'>
+							<img src="" alt="" class="img_1">
 							<div class="content">
 								<p class="content_1"></p>
 								<p class="content_2"></p>
 							</div>
 						</li>
 						<li class="getli">
-							<img src="" alt="" id='img'>
+							<img src="" alt="" class="img_1">
 							<div class="content">
 								<p class="content_1"></p>
 								<p class="content_2"></p>
 							</div>
 						</li>
 						<li class="getli">
-							<img src="" alt="" id='img'>
+							<img src="" alt="" class="img_1">
 							<div class="content">
 								<p class="content_1"></p>
 								<p class="content_2"></p>
 							</div>
 						</li>
 						<li class="getli">
-							<img src="" alt="" id='img'>
+							<img src="" alt="" class="img_1">
 							<div class="content">
 								<p class="content_1"></p>
 								<p class="content_2"></p>
 							</div>
 						</li>
 						<li class="getli">
-							<img src="" alt="" id='img'>
+							<img src="" alt="" class="img_1">
 							<div class="content">
 								<p class="content_1"></p>
 								<p class="content_2"></p>
 							</div>
 						</li>
 						<li class="getli">
-							<img src="" alt="" id='img'>
+							<img src="" alt="" class="img_1">
 							<div class="content">
 								<p class="content_1"></p>
 								<p class="content_2"></p>
@@ -380,12 +403,71 @@
 					</div>
 				</div>
 			</div>
-			<div class="mainBottom"></div>
-
+			<div id="map" >
+			</div>
 		</div>
-		<div class="footer"></div>
+		<div class="footer">
+			<div class="footer_top">
+				<div class="footerToprow">
+					<div class="footer_logo">
+						<a href="">
+							<img src="images/index/header/ft1.png" alt="">
+						</a>
+					</div>
+					<div class="footer_text">
+						<div class="ft1">
+							<p>Knowledge is power, and these detox diet tips and guides provide you with the information you need to start things off the right way and stick with it to success. From learning the basics to getting down to the nitty gritty of sugar addition and food additives, it’s all here for you</p>
+							<ul>
+								<li></li>
+								<li></li>
+								<li></li>
+							</ul>
+						</div>
+						<div class="ft2">
+							<h3 class="title_text">WORK TIME</h3>
+							<div class="main_time">
+								<span class="left">Monday - Friday</span>
+								<span class="right">09:00 - 23:00</span>
+							</div>
+							<div class="main_time">
+								<span class="left">Saturday - Sunday</span>
+								<span class="right">11:00 - 23:00</span>
+							</div>
+							<h3 class="title_text title_margin">SUBSCRIBE TO OUR NEWS</h3>
+							<form action="">
+								<input type="text" placeholder="Your email" class="input_email">
+								<input type="button" value="SUBMIT" class="input_submit">
+							</form>
+						</div>
+						<div class="ft3">
+							<h3 class="title_text">MENU CATEGORIES</h3>
+							<p>Detox Desserts</p>
+							<p>Detox Drinks</p>
+							<p>Detox Smoothies</p>
+							<p>Detox Tea</p>
+							<p>Detox Waters</p>
+							<p>Detox Recipes</p>
+						</div>
+						<div class="ft4">
+							<h3 class="title_text">QUICK LINKS</h3>
+							<p><a href="">Home</a></p>
+							<p><a href="">About</a></p>
+							<p><a href="">Menu</a></p>
+							<p><a href="">Pages</a></p>
+							<p><a href="">Blog</a></p>
+							<p><a href="">Contact</a></p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="footer_bottom">© 2017 All Rights Reserved.</div>
+		</div>
+		<div class="fixed">
+			<a href="#top"><img src="images/sjt.png" alt=""></a>
+		</div>
 	</div>
 	<script src="javascripts/shop.js"></script>
+	<script src="javascripts/header.js"></script>
 </body>
 </html>
 

@@ -32,11 +32,32 @@ $(function(){
 		$('.fl4').css('background','none')
 	})
 
-	$('.getli').mouseover(function(){
-		$('.img_1').css('box-shadow','-10px 10px 0px #125f06');
-	})
-	$('.getli').mouseout(function(){
-		$('.img_1').css('box-shadow','none');
-	})
-
 })
+	//Map
+	var map = new AMap.Map('map',{
+		    zoom: 10,//缩放比例
+		    // zooms:[3,20],//指定缩放的范围
+		    expandZoomRange:true,//允许缩放
+		    center: [106.55,29.57],//new AMap.LngLat(116.39,39.9)  经纬度
+		    pitch:50,//设置俯仰角度   0度~83度
+		    viewMode:'3D',//设置3D地图
+		    mapStyle: 'amap://styles/macaron'//样式URL   amap://styles/模版样式的英文名
+		});
+
+	// 添加地图控件
+		AMap.plugin(['AMap.ToolBar','AMap.Scale','AMap.OverView'],
+		    function(){
+		        map.addControl(new AMap.ToolBar());
+
+		        map.addControl(new AMap.Scale());
+
+		        map.addControl(new AMap.OverView({isOpen:true}));
+		});
+
+	// 设置点标注
+		var marker = new AMap.Marker({
+			position:[106.55,29.57],//设置marker的经纬度
+			map: map,//map应用于哪个地图
+			title:'美丽的重庆',
+			draggable:true
+		    });
