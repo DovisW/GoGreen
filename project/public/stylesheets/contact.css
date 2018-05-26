@@ -44,7 +44,7 @@ a {
   margin-top: 0px;
 }
 .wrap .main .mainTop .maintopContent .content ul {
-  width: 60%;
+  width: 178px;
   margin: 0 auto;
 }
 .wrap .main .mainTop .maintopContent .content ul li {
@@ -152,4 +152,9 @@ a {
   border: 1px solid #125f06;
   background: #125f06;
   color: #fff;
+}
+@media screen and (max-width: 799px) {
+  .wrap .main .mainTop {
+    display: none;
+  }
 }
