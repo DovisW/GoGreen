@@ -1,7 +1,20 @@
 @charset "utf-8";
 @font-face {
   src: url('../font/FrederickatheGreat-Regular.ttf');
-  font-family: FrederickatheGreat-Regular;
+  font-family: Fredericka the Great;
+}
+@font-face {
+  src: url('../font/Dosis-Light.ttf');
+  font-family: Dosis;
+}
+html {
+  box-sizing: border-box;
+  font-family: Dosis;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
 }
 * {
   margin: 0;
@@ -13,8 +26,104 @@ a {
 li {
   list-style: none;
 }
+h3.title-small-bg-img {
+  position: relative;
+  font-size: 30px;
+  font-family: Fredericka the Great;
+  color: #125f06;
+  padding-bottom: 20px;
+  margin-bottom: 40px;
+  text-align: center;
+  font-weight: 400;
+}
+h3.title-small-bg-img:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  top: -40px;
+  width: 120px;
+  height: 50px;
+  background: url('../images/index/ct1.png') no-repeat center;
+}
+h3.title-small-bg-img:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: 100px;
+  height: 1px;
+  bottom: 0px;
+  background: url('../images/index/bngreen.png');
+}
 .wrap {
   width: 100%;
+}
+.wrap .main {
+  margin-top: 75px;
+}
+.wrap .mainTop {
+  width: 100%;
+  height: 283px;
+  padding: 60px 0 90px;
+  background: url("../images/index/bg7.jpg") center / cover;
+  background-attachment: fixed;
+  margin-bottom: 80px;
+  position: relative;
+}
+.wrap .mainTop:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 70px;
+  background: url("../images/index/bn1.png") no-repeat right / cover;
+  z-index: 3;
+}
+.wrap .mainTop .maintopContent div.content {
+  width: 700px;
+  height: 100%;
+  margin: 0 auto;
+  padding: 20px 0;
+  position: relative;
+}
+.wrap .mainTop .maintopContent div.content:before,
+.wrap .mainTop .maintopContent div.content:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 70%;
+  height: 1px;
+  margin: 0 auto;
+  background: url("../images/index/bnwhite.png");
+}
+.wrap .mainTop .maintopContent div.content:before {
+  content: "";
+  top: -10px;
+}
+.wrap .mainTop .maintopContent div.content:after {
+  content: "";
+  bottom: -10px;
+}
+.wrap .mainTop .maintopContent div.content h2,
+.wrap .mainTop .maintopContent div.content h3 {
+  font-family: 'Fredericka the Great', cursive;
+  margin-bottom: 20px;
+  text-align: center;
+  font-weight: 500;
+  line-height: 1.1;
+  color: #fff;
+}
+.wrap .mainTop .maintopContent div.content h2 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+.wrap .mainTop .maintopContent div.content h3 {
+  font-size: 16px;
 }
 .wrap .content {
   width: 100%;
@@ -25,18 +134,25 @@ li {
   height: 103px;
   margin: 0 auto;
   text-align: center;
-  background: pink;
 }
-.wrap .content .content_Top h3 {
-  color: #125f06;
-  height: 33px;
-  padding-bottom: 20px;
-  margin-bottom: 50px;
-  font-size: 30px;
-  font-family: 'FrederickatheGreat-Regular';
-}
-.wrap .content .content_Bottom {
+.wrap .content .bottomPicture {
   width: 100%;
-  height: 384px;
-  background: yellowgreen;
+}
+.wrap .content .bottomPicture ul {
+  width: 100%;
+  display: -webkit-flex;
+  float: left;
+}
+.wrap .content .bottomPicture ul li {
+  flex-grow: 1;
+  overflow: hidden;
+}
+.wrap .content .bottomPicture ul li a {
+  width: 100%;
+  display: block;
+  height: 100%;
+}
+.wrap .content .bottomPicture ul li img {
+  width: 100%;
+  height: 100%;
 }

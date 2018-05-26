@@ -111,14 +111,14 @@ a {
 }
 .wrap > .content > .banner div.banner_box {
   width: 100%;
-  height: 808px;
+  height: 100%;
   padding: 280px 0;
   position: absolute;
   top: 0px;
   display: none;
 }
 .wrap > .content > .banner div.banner_box div.banner_content {
-  width: 694px;
+  width: 700px;
   height: 100%;
   margin: 0 auto;
   padding: 50px 0;
@@ -381,7 +381,7 @@ a {
 }
 .wrap > .content > .product div.product_container div.wraper-our-success div.content-our-success {
   background: #fff;
-  width: 100%;
+  width: 1130px;
   padding: 80px 0 90px;
   box-shadow: 0 5px 5px #c2c2c2;
   position: absolute;
@@ -435,7 +435,7 @@ a {
 }
 .wrap > .content > .product div.product_container div.wraper-our-success div.content-our-success div.contentRight {
   flex-grow: 1;
-  width: 58.4%;
+  width: 53.4%;
   padding: 0 105px 0 95px;
   text-align: center;
 }
@@ -470,6 +470,7 @@ a {
   width: 1200px;
   position: relative;
   height: 405px;
+  margin: 0 -15px;
 }
 .wrap > .content > .product div.product_container div.best_product div.best_banner button {
   width: 40px;
@@ -488,7 +489,7 @@ a {
   color: #fff;
 }
 .wrap > .content > .product div.product_container div.best_product div.best_banner .button_Previous {
-  left: -20px;
+  left: -5px;
 }
 .wrap > .content > .product div.product_container div.best_product div.best_banner .button_Previous:before {
   content: '<';
@@ -498,7 +499,7 @@ a {
   opacity: .75;
 }
 .wrap > .content > .product div.product_container div.best_product div.best_banner .button_Next {
-  right: -20px;
+  right: -5px;
 }
 .wrap > .content > .product div.product_container div.best_product div.best_banner .button_Next:before {
   content: '>';
@@ -514,7 +515,7 @@ a {
   position: relative;
 }
 .wrap > .content > .product div.product_container div.best_product div.best_banner div.banner_wrap div.best_banner_content {
-  width: 4800px;
+  width: 3600px;
   height: 100%;
   position: absolute;
   left: -1200px;
@@ -529,6 +530,9 @@ a {
   width: 100%;
   margin-bottom: 25px;
   position: relative;
+}
+.wrap > .content > .product div.product_container div.best_product div.best_banner div.banner_wrap div.best_banner_content div.slider div.img img {
+  width: 100%;
 }
 .wrap > .content > .product div.product_container div.best_product div.best_banner div.banner_wrap div.best_banner_content div.slider div.img:before {
   content: "";
@@ -591,7 +595,6 @@ a {
   left: 0px;
   bottom: 0;
   background: #125f06;
-  z-index: -1;
 }
 .wrap > .content > .special div.special_wrap .wrap_one .wrap_two div.special_main div.special_img a {
   display: block;
@@ -601,14 +604,9 @@ a {
   overflow: hidden;
   transition: all .3s;
 }
-.wrap > .content > .special div.special_wrap .wrap_one .wrap_two div.special_main div.special_img a:before {
-  content: '';
-  display: block;
-  padding-top: 110%;
-}
 .wrap > .content > .special div.special_wrap .wrap_one .wrap_two div.special_main div.special_img a img {
   position: absolute;
-  height: 100%;
+  width: 100%;
   top: 0;
   left: 50%;
   transform: translateX(-50%);
@@ -624,7 +622,6 @@ a {
   bottom: 0;
   background: #125f06;
   opacity: 0.5;
-  z-index: 2;
   transition: all .4s;
   transform: scale(1, 0);
 }
@@ -638,6 +635,7 @@ a {
   top: 0px;
   height: 100%;
   width: 475px;
+  z-index: 33;
 }
 .wrap > .content > .special div.special_wrap .wrap_one .wrap_two div.special_main div.special_right div.special_tea {
   height: 100%;
@@ -761,6 +759,9 @@ a {
   transition: all .4s;
   margin-bottom: 25px;
 }
+.wrap > .content > .events div.events_wrap div.events_main div.events_mid div.img img {
+  width: 100%;
+}
 .wrap > .content > .events div.events_wrap div.events_main div.events_mid div.img:hover {
   box-shadow: -10px 10px 0px #125f06;
 }
@@ -832,4 +833,152 @@ a {
 }
 .wrap > .content > .bottomPicture ul li img {
   width: 100%;
+}
+@media screen and (max-width: 1227px) {
+  .wrap > .content > .product > div.product_container {
+    width: 970px;
+  }
+  .wrap > .content > .product > div.product_container div.wraper-our-success > div.content-our-success {
+    width: 930px;
+    height: 473px;
+  }
+  .wrap > .content > .product > div.product_container div.wraper-our-success > div.content-our-success div.contentLeft .content_green {
+    right: -80px;
+  }
+  .wrap > .content > .product > div.product_container div.best_product > div.best_banner {
+    width: 1000px;
+  }
+  .wrap > .content > .product > div.product_container div.best_product > div.best_banner div.banner_wrap div.best_banner_content {
+    width: 3000px;
+    left: -1000px;
+  }
+  .wrap > .content > .product > div.product_container div.best_product > div.best_banner div.banner_wrap div.best_banner_content div.slider {
+    width: 220px;
+  }
+  .wrap > .content > .special div.special_wrap {
+    width: 970px;
+  }
+  .wrap > .content > .events div.events_wrap {
+    width: 970px;
+  }
+}
+@media screen and (max-width: 1070px) {
+  .wrap > .content > .product > div.product_container > div.wraper-our-success > div.content-our-success div.contentLeft .content_green {
+    right: -40px;
+  }
+}
+@media screen and (max-width: 1027px) {
+  div.wrap > div.content > div.banner {
+    height: 650px;
+  }
+  div.wrap > div.content > div.banner div.banner_box {
+    padding: 200px 0;
+  }
+  .wrap > .content > .home > .home_glamorous .wraper-our-success .contentLeft {
+    display: none;
+  }
+  .wrap > .content > .product > div.product_container {
+    width: 750px;
+  }
+  .wrap > .content > .product > div.product_container div.wraper-our-success > div.content-our-success {
+    width: 750px;
+    height: 426px;
+  }
+  .wrap > .content > .product > div.product_container div.wraper-our-success > div.content-our-success div.contentLeft {
+    display: none;
+  }
+  .wrap > .content > .product > div.product_container div.best_product > div.best_banner {
+    width: 780px;
+  }
+  .wrap > .content > .product > div.product_container div.best_product > div.best_banner button {
+    top: 20%;
+  }
+  .wrap > .content > .product > div.product_container div.best_product > div.best_banner div.banner_wrap div.best_banner_content {
+    width: 2340px;
+    left: -780px;
+  }
+  .wrap > .content > .product > div.product_container div.best_product > div.best_banner div.banner_wrap div.best_banner_content div.slider {
+    width: 165px;
+  }
+  .wrap > .content > .special > .special_wrap > .wrap_one > .wrap_two > .special_main div.special_img {
+    width: 100%;
+  }
+  .wrap > .content > .special > .special_wrap > .wrap_one > .wrap_two > .special_main div.special_right {
+    top: 50%;
+    left: 50%;
+    margin-left: -237px;
+  }
+  .wrap > .content > .special div.special_wrap {
+    width: 100%;
+    padding: 0 20px;
+  }
+  .wrap > .content > .special div.special_wrap div.wrap_one {
+    margin: 0 0;
+  }
+  .wrap > .content > .special div.special_wrap div.wrap_one div.wrap_two > div.special_main > div.special_img > a {
+    width: 100%;
+  }
+  .wrap > .content > .events div.events_wrap {
+    width: 750px;
+  }
+}
+@media screen and (max-width: 850px) {
+  div.wrap > div.content > div.weekend p.text_weekend {
+    display: none;
+  }
+}
+@media screen and (max-width: 810px) {
+  div.wrap > div.content > div.banner {
+    height: 420px;
+  }
+  div.wrap > div.content > div.banner div.banner_box {
+    padding: 100px 0;
+  }
+  div.wrap > div.content > div.banner div.banner_box div.banner_content {
+    width: 480px;
+  }
+  div.wrap > div.content > div.banner div.banner_box div.banner_content h2 {
+    font-size: 45px;
+  }
+  div.wrap > div.content > div.banner div.banner_box div.banner_content h3 {
+    font-size: 35px;
+  }
+  .wrap > .content > .product > div.product_container {
+    width: 100%;
+    padding: 0 15px;
+  }
+  .wrap > .content > .product > div.product_container div.wraper-our-success > div.content-our-success {
+    width: 100%;
+  }
+  .wrap > .content > .product > div.product_container div.wraper-our-success > div.content-our-success div.contentLeft {
+    display: none;
+  }
+  .wrap > .content > .product > div.product_container div.best_product > div.best_banner {
+    width: 660px;
+    margin: 0 auto;
+  }
+  .wrap > .content > .product > div.product_container div.best_product > div.best_banner button {
+    top: 40%;
+  }
+  .wrap > .content > .product > div.product_container div.best_product > div.best_banner div.banner_wrap div.best_banner_content {
+    width: 3600px;
+    left: -660px;
+  }
+  .wrap > .content > .product > div.product_container div.best_product > div.best_banner div.banner_wrap div.best_banner_content div.slider {
+    width: 300px;
+  }
+}
+@media screen and (max-width: 770px) {
+  .wrap > .content > .events div.events_wrap {
+    width: 100%;
+    padding: 0 10px;
+  }
+  .wrap > .content > .events div.events_wrap p.text_events {
+    display: none;
+  }
+}
+@media screen and (max-width: 720px) {
+  div.wrap > div.content > div.home > div.home_glamorous > div.main_glamorous div.mG_branch {
+    width: 100%;
+  }
 }

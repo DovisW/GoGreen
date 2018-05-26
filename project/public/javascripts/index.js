@@ -47,24 +47,41 @@ function fun(){
 timer = setInterval(fun,3000);
 
 $(function(){
+	window.onload = function(){
+		$.ajax({
+			url:'/index',
+			type:'post',
+			data:{},
+			success:function(data){
+				var div = $('.slider');
+				for(var i=0;i<div.length;i++){
+					$(div[i]).find('img').attr('src','../images/index/'+data[i%4].image);
+					$(div[i]).find('.slider_money').text(data[i%4].money);
+					$(div[i]).find('.slider_text').text(data[i%4].message);
+				}
+			}
+		})
+	}
+
 	var flog = 4 ;
+	var width = $('#slider').outerWidth(true);
 	$('.button_Previous').click(function(){
 		flog--;
-		var num = flog*(-300)+'px';
+		var num = flog*(-width)+'px';
 		$('.best_banner_content').stop(true,false).animate({'left':num},'slow',function(){
-			if(flog<0){
-				$('.best_banner_content').css('left','-900px');
-				flog = 3;
+			if(flog<=0){
+				$('.best_banner_content').css('left',-4*width+'px');
+				flog = 4;
 			}
 		})
 	})
 	$('.button_Next').click(function(){
 		flog++;
-		var num = flog*(-300)+'px';
+		var num = flog*(-width)+'px';
 		$('.best_banner_content').stop(true,false).animate({'left':num},'slow',function(){
-			if(flog>12){
-				$('.best_banner_content').css('left','-900px');
-				flog = 3;
+			if(flog>=8){
+				$('.best_banner_content').css('left',-4*width+'px');
+				flog = 4;
 			}
 		})
 	})
