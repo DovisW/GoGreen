@@ -12,12 +12,12 @@ var connection = mysql.createConnection({
 connection.connect();
 // console.log('数据库连接成功');
 router.get('/', function(req, res, next) {
-  res.render('shopDetail',);
+  res.render('shopDetail');
   // url.parse(req);
   // // console.log(req);
 });
 router.post('/', function(req, res, next) {
-	var  Sql = 'SELECT * FROM go_goods';
+	var  Sql = 'SELECT * FROM go_detail';
 	connection.query(Sql,function (err, result) {
 	        if(err){
 	         // console.log('[SELECT ERROR] - ',err.message);
