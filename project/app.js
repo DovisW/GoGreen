@@ -12,11 +12,7 @@ var indexRouter=require('./routes/index');
 var aboutRouter=require('./routes/about');
 var shopDetailRouter=require('./routes/shopDetail');
 var galleryRouter=require('./routes/gallery');
-var shopCarRouter=require('./routes/shopCar');
-var shop_tabRouter=require('./routes/shop_tab');
-
-
-
+var sdtailRouter=require('./routes/sdtail');
 var app = express();
 
 // view engine setup
@@ -32,14 +28,15 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
 app.use('/shop', shopRouter);
+app.use('/sdtail', sdtailRouter);
+
 // app.use('/users', usersRouter);
 app.use('/contact', contactRouter);
 app.use('/index',indexRouter);
 app.use('/about', aboutRouter);
 app.use('/shopDetail',shopDetailRouter);
 app.use('/gallery',galleryRouter);
-app.use('/shopCar',shopCarRouter)
-app.use('/shop_tab',shop_tabRouter)
+
 
 
 // catch 404 and forward to error handler

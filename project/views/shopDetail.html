@@ -19,7 +19,7 @@
 				</div>
 				<div class="row_right">
 					<ul>
-						<li><a href="/home">Home</a></li>
+						<li><a href="/index">Home</a></li>
 						<li><a href="/about">ABOUT</a></li>
 						<li><a href="/shop">SHOP</a></li>
 						<li><a href="/shopDetail">SHOP DETAIL</a></li>
@@ -46,29 +46,22 @@
 	</div>
 	<div class="container" style="clear: both;">
 		<div class="row" >
-			<div class="col-md-3 Featured " >
+			<div class="col-md-3 Featured ">
 				<div class="title">
 					<h3>Featured</h3>
 					<a href="#">View Cart<span>>></span></a>
 				</div>
-				<div id="shopCarBar">
-					
-
-					<!-- <div class="show flearfix" >
-						<i class=" icon-remove"></i>
-						<div class="afterColor"><img alt="" src=""></div>
-						<p class="p1"></p>
-						<p style="margin: 0 ;height: 24px; text-align: right;line-height: 24px; color: #125F06;" class="p2"></p>
-					</div> -->
-					
-					
-				
-				<!-- <div class="p1 flearfix">
+				<div class="show flearfix">
+					<i class=" icon-remove"></i>
+					<div class="afterColor"><img alt=""></div>
+					<p class="p1"></p>
+					<p style="margin: 0 ;height: 24px; text-align: right;line-height: 24px; color: #125F06;" class="p2"></p>
+				</div>
+				<div class="show flearfix">
 					<i class="icon-remove"></i>
 					<div class="afterColor"><img alt=""></div>
 					<p class="p1"></p>
 					<p style="margin: 0 ;height: 24px; text-align: right;line-height: 24px; color: #125F06;" class="p2"></p>
-				</div> -->
 				</div>
 				<div class="wrapper-total clearfix">
 					<span class="text-total fl">SUBTOTAL:</span>
@@ -78,10 +71,10 @@
 				<div class="title Categories">
 					<h3>Categories</h3>
 					<ul class=" flearfix">
-						<li><a href="#">Detox Drinks <i class="icon-caret-right fr"></i></a></li>
-						<li><a href="#">Detox Smoothies<i class="icon-caret-right fr"></i></a></li>
-						<li><a href="#">Detox Tea<i class="icon-caret-right fr"></i></a></li>
-						<li><a href="#">Detox Waters<i class="icon-caret-right fr"></i></a></li>
+						<li><a href="#">Detox Drinks <i class="icon-caret-class="img_1""></i></a></li>
+						<li><a href="#">Detox Smoothies<i class="icon-caret-class="img_1""></i></a></li>
+						<li><a href="#">Detox Tea<i class="icon-caret-class="img_1""></i></a></li>
+						<li><a href="#">Detox Waters<i class="icon-caret-class="img_1""></i></a></li>
 					</ul>
 				</div>
 				<div class="ad_Featured">
@@ -131,18 +124,17 @@
 			<div class="col-md-9 shopCar container">
 				<div class="row">
 					<div class="col-sm-4 links-pic col-xs-12">
-						<img src="images/<%=url%>" alt="">
+						<img src="images/about_img/pic1.jpg" alt="">
 					</div>
 					<div class="col-sm-8 pic-des col-xs-12" id="pic-des" >
-						<p class="slider-money"><%=text%></p>
-						<h3><%=miaoshu%></h3>
+						<p class="slider-money">$15.00</p>
+						<h3>Orange and Raspberry Detox Water</h3>
 						<p class="slider-text">On hot summer days, staying hydrated is the most important step to keeping your cells healthy and running the way they should. Personally, I think water is a little boring, so I like to take summer drinks to the next level, improving their nutritional value and their flavor using healing spices and roots, fresh juices, and refreshing herbal teas.</p>
 						<div class=" list-btn-shop fl">
-							<button class="minus fl" id="minus">-</button >
-							<input type="text fr" class="showText" value="0" id="showText">
-							<button class="plus fr" id="plus">+</button>
+							<button class="minus fl">-</button >
+							<input type="text fr" class="showText" value="1">
+							<button class="plus fr">+</button>
 						</div>
-						<input type="hidden" value="<%=id%>" id="shopCarData">
 						<button class="btnAdd fl">ADD TO CART</button> 
 					</div>
 					
@@ -172,39 +164,39 @@
 						</div>
 						<div class="ReviewsBox">
 							<div>
-								<h4 class="fl">John Doe</h4>
-								<div class="clearTop">
-								<i class=" icon-star fl"></i>
-								<i class=" icon-star fl"></i>
-								<i class=" icon-star fl"></i>
-								<i class=" icon-star fl"></i>
+								<h4 class="fl"></h4>
+								<div class="clearTop xing1">
+								<i class=" icon-star-empty fl"></i>
+								<i class=" icon-star-empty fl"></i>
+								<i class=" icon-star-empty fl"></i>
+								<i class=" icon-star-empty fl"></i>
 								<i class=" icon-star-empty fl"></i>
 								</div>
 								<i class=" icon-reply reoly"></i>
 							</div>
 							<p style="clear: both;">27 Dec 2017 at 2:30pm</p>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer accumsan egestas elese ifend. Phasellus a felis at estei to bibendum feugiat ut eget eni Praesent et messages in con sectetur posuere dolor non.</p>
+							<p id="p1"></p>
 						</div>	
 					</div>
 					<div class="col-xs-12 ReviewsPeople">
 						<div class="pic">
 							<img src="images/about_img/h2.jpg" alt="">
 						</div>
-						<div class="ReviewsBox">
+						<div class="ReviewsBox div1">
 							<div style="clear: both;">
-								<h4 class="fl">Marry Doe</h4>
-								<div class="clearTop">
-								<i class=" icon-star fl"></i>
-								<i class=" icon-star fl"></i>
-								<i class=" icon-star fl"></i>
-								<i class=" icon-star fl"></i>
+								<h4 class="fl"></h4>
+								<div class="clearTop xing2">
+								<i class="icon-star-empty fl"></i>
+								<i class="icon-star-empty fl"></i>
+								<i class="icon-star-empty fl"></i>
+								<i class="icon-star-empty fl"></i>
 								<i class=" icon-star-empty fl"></i>
 								</div>
 								<i class=" icon-reply reoly"></i>
 
 							</div>
-							<p style="clear: both;">27 Dec 2017 at 2:30pm</p>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer accumsan egestas elese ifend. Phasellus a felis at estei to bibendum feugiat ut eget eni Praesent et messages in con sectetur posuere dolor non.</p>
+							<p style="clear: both;" class="neirong">27 Dec 2017 at 2:30pm</p>
+							<!-- <p class="neirong"></p> -->
 						</div>	
 					</div>
 					<div class="col-xs-12 Write">
@@ -215,24 +207,27 @@
 							<div class="Rating flearfix">
 								<div class="left fl">Your Rating</div>
 								<ul class="right fr">
-									<li><i class="icon-star-empty"></i></li>
-									<li><i class="icon-star-empty"></i><i class="icon-star-empty"></i></li>
-									<li><i class="icon-star-empty"></i><i class="icon-star-empty"></i><i class="icon-star-empty"></i></li>
-									<li><i class="icon-star-empty"></i><i class="icon-star-empty"></i><i class="icon-star-empty"></i><i class="icon-star-empty"></i></li>
-									<li><i class="icon-star-empty"></i><i class="icon-star-empty"></i><i class="icon-star-empty"></i><i class="icon-star-empty"></i><i class="icon-star-empty"></i></li>
+									<li index="1"><i class="icon-star-empty"></i></li>
+									<li index="2"><i class="icon-star-empty"></i><i class="icon-star-empty"></i></li>
+									<li index="3"><i class="icon-star-empty"></i><i class="icon-star-empty"></i><i class="icon-star-empty"></i></li>
+									<li index="4"><i class="icon-star-empty"></i><i class="icon-star-empty"></i><i class="icon-star-empty"></i><i class="icon-star-empty"></i></li>
+									<li index="5"><i class="icon-star-empty"></i><i class="icon-star-empty"></i><i class="icon-star-empty"></i><i class="icon-star-empty"></i><i class="icon-star-empty"></i></li>
 								</ul>
 							</div>
 							<div class="inputBox">
-								<form action="" method="get" id="inputSub">
 									<div class="input_text clearfix">
-										<div class="left fl"><input type="text" name='text' placeholder="Type your name"></div>
-										<div class="right fl"><input type="email" name='email' id="emailPut" placeholder="Type your name"></div>
+										<div class="left fl">
+											<input type="text" name='text' placeholder="Type your name">
+										</div>
+										<div class="right fl">
+											<!-- <input type="email" name='email' id="emailPut" placeholder="Type your name"> -->
+										</div>
 									</div>
 									<div class="textBox">
-										<textarea name="liuyan" id="" cols="30" rows="10"></textarea>
+										<textarea name="liuyan" id="text1" cols="30" rows="10"></textarea>
 									</div>
-									<input type="submit" class="formBtn" value="Send Review">
-								</form>
+									<button class="formBtn" value="Send Review" id="inputSub">提交</button>
+								
 							</div>
 						</div>
 					</div>
@@ -268,9 +263,9 @@
 					</ul>
 				</div>				
 	</div>
-	<div class="footer" >
-			<div class="footer_top " style="clear: both;">
-				<div class="footerToprow" style="clear: both;"> 
+	<div class="footer">
+			<div class="footer_top" style="clear: both;">
+				<div class="footerToprow" style="clear: both; margin: 0"> 
 					<div class="footer_logo" style="clear: both;">
 						<a href="">
 							<img src="images/index/header/ft1.png" alt="">
