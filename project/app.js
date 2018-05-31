@@ -12,8 +12,10 @@ var indexRouter=require('./routes/index');
 var aboutRouter=require('./routes/about');
 var shopDetailRouter=require('./routes/shopDetail');
 var galleryRouter=require('./routes/gallery');
-var sdtailRouter=require('./routes/sdtail');
-var plRouter=require('./routes/pl');
+var shopCarRouter=require('./routes/shopCar');
+var shop_tabRouter=require('./routes/shop_tab');
+
+
 
 var app = express();
 
@@ -30,17 +32,14 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
 app.use('/shop', shopRouter);
-app.use('/sdtail', sdtailRouter);
-
 // app.use('/users', usersRouter);
 app.use('/contact', contactRouter);
 app.use('/index',indexRouter);
 app.use('/about', aboutRouter);
 app.use('/shopDetail',shopDetailRouter);
 app.use('/gallery',galleryRouter);
-app.use('/pl',plRouter);
-
-
+app.use('/shopCar',shopCarRouter)
+app.use('/shop_tab',shop_tabRouter)
 
 
 // catch 404 and forward to error handler

@@ -111,7 +111,7 @@ button {
   line-height: 35px;
   width: 100px;
   color: #477B5E;
-  font-family: 'Dosis', 'serif';
+  font-family: 'A';
 }
 .title a {
   position: absolute;
@@ -158,6 +158,9 @@ button {
 }
 .Featured .show div img {
   width: 100%;
+}
+.Featured .show .p2{
+  margin: 0 ;height: 24px; text-align: right;line-height: 24px; color: #125F06;
 }
 .Featured .wrapper-total {
   margin-top: 20px;
@@ -450,10 +453,6 @@ button {
 }
 .shopCar .Write-put {
   height: 315px;
-
-}
-.shopCar .Write-put i{
-  color:#FFDE00;
 }
 .shopCar .Write-put .Rating {
   width: 100%;
@@ -581,6 +580,9 @@ button {
 .shopCar .list-shop .bgColor:hover:after {
   transform: scale(1, 1);
   box-shadow: -10px 10px 0 #125f06;
+}
+.footer .footer_top .footerToprow{
+  width: 1170px; !important;
 }
 @media screen and (min-width: 1200px) {
   #banner {
