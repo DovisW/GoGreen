@@ -413,7 +413,6 @@ a {
   content: '';
   transform: scale(1, 1);
 }
-
 .wrap .main .mainMain .mainMainRight #getli li:hover {
   box-shadow: -10px -10px 0px #125f06;
   transition: all .5s;
