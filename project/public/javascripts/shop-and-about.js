@@ -95,7 +95,7 @@ $(function(){
            	 }); 
  		
  		$.ajax({
-				url:'/shopDetail',
+				url:'/pl',
 				type:'post',
 				data:{},
 				success:function(data){

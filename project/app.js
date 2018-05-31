@@ -13,6 +13,8 @@ var aboutRouter=require('./routes/about');
 var shopDetailRouter=require('./routes/shopDetail');
 var galleryRouter=require('./routes/gallery');
 var sdtailRouter=require('./routes/sdtail');
+var plRouter=require('./routes/pl');
+
 var app = express();
 
 // view engine setup
@@ -36,6 +38,8 @@ app.use('/index',indexRouter);
 app.use('/about', aboutRouter);
 app.use('/shopDetail',shopDetailRouter);
 app.use('/gallery',galleryRouter);
+app.use('/pl',plRouter);
+
 
 
 
