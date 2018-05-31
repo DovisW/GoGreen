@@ -1,0 +1,537 @@
+@charset "utf-8";
+@font-face{
+  src:url('../font/FrederickatheGreat-Regular.ttf');
+  font-family:Fredericka the Great;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+.wrap {
+  width: 100%;
+}
+.wrap .main {
+  width: 100%;
+}
+.wrap .main .mainTop {
+  width: 100%;
+  height: 283px;
+  background: url('../images/img_1.jpg') no-repeat center;
+  position: relative;
+  margin-bottom: 50px;
+  margin-top: 75px;
+}
+.wrap .main .mainTop .miantopContent {
+  width: 100%;
+  height: 133px;
+  padding: 60px 0px 90px 0px;
+}
+.wrap .main .mainTop .miantopContent .content {
+  width: 25%;
+  height: 73px;
+  padding: 30px 0px;
+  margin: 0 auto;
+  border-bottom: 1px dashed #fff;
+  border-top: 1px dashed #fff;
+  text-align: center;
+
+}
+.wrap .main .mainTop .miantopContent .content h2 {
+  font-size: 36px;
+  color: #fff;
+  margin-bottom: 10px;
+    font-family:'Fredericka the Great';
+  font-weight: 400;
+}
+.wrap .main .mainTop .miantopContent .content ul {
+  width: 178px;
+  margin: 0 auto;
+}
+.wrap .main .mainTop .miantopContent .content ul li {
+  float: left;
+}
+.wrap .main .mainTop .miantopContent .content ul li a {
+  color: #fff;
+  font-size: 16px;
+}
+.wrap .main .mainTop .miantopContent .content ul span {
+  color: #fff;
+  font-size: 16px;
+}
+.wrap .main .mainTop .miantopContent .content ul .right {
+  float: right;
+}
+.wrap .main .mainTop .img {
+  width: 100%;
+  position: absolute;
+  bottom: 0px;
+}
+.wrap .main .mainTop .img img {
+  width: 100%;
+  display: block;
+}
+.wrap .main .mainMain {
+  width: 86.7%;
+  margin: 0 auto;
+    // height:1930px;
+      display:-webkit-flex;
+      margin-bottom:40px;
+}
+.wrap .main .mainMain .mainMainLeft {
+  width: 22%;
+  padding: 0px 15px;
+  flex-grow:1;
+}
+.wrap .main .mainMain .mainMainLeft .leftTop {
+  width: 100%;
+  margin-bottom: 50px;
+}
+.wrap .main .mainMain .mainMainLeft .leftTop .lefttopTop {
+  width: 100%;
+  height: 36px;
+  margin-bottom: 30px;
+  border-bottom: 1px dashed #9a9a9a;
+}
+.wrap .main .mainMain .mainMainLeft .leftTop .lefttopTop h3 {
+  font-size: 18px;
+  color: #125f06;
+  float: left;
+  height: 35px;
+  border-bottom: 3px solid green;
+  font-family:'Fredericka the Great';
+  font-weight: 400;
+}
+.wrap .main .mainMain .mainMainLeft .leftTop .lefttopTop a {
+  float: right;
+  color: #9a9a9a;
+}
+.wrap .main .mainMain .mainMainLeft .leftTop .lefttopTop :hover {
+  color: green;
+}
+.wrap .main .mainMain .mainMainLeft .leftTop .lefttopBottom {
+  width: 100%;
+  height: 319px;
+}
+.wrap .main .mainMain .mainMainLeft .leftTop .lefttopBottom .lefttopBottomTop {
+  width: 100%;
+  height: 194px;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  border-bottom: 1px dashed #9a9a9a;
+}
+.wrap .main .mainMain .mainMainLeft .leftTop .lefttopBottom .lefttopBottomTop .top {
+  width: 100%;
+  height: 82px;
+  margin-bottom: 30px;
+}
+.wrap .main .mainMain .mainMainLeft .leftTop .lefttopBottom .lefttopBottomTop .top .topLeft {
+  float: left;
+  width: 6%;
+  height: 82px;
+  line-height: 82px;
+}
+.wrap .main .mainMain .mainMainLeft .leftTop .lefttopBottom .lefttopBottomTop .top .topLeft a {
+  font-size: 20px;
+  font-weight: bolder;
+  color: #747474;
+}
+.wrap .main .mainMain .mainMainLeft .leftTop .lefttopBottom .lefttopBottomTop .top .topLeft :hover {
+  color: green;
+}
+.wrap .main .mainMain .mainMainLeft .leftTop .lefttopBottom .lefttopBottomTop .top .topCenter {
+  width: 25%;
+  height: 82px;
+  margin: 0px 0px 0px 5px;
+  float: left;
+  position: relative;
+  &:before{content:"";position:absolute;width:100%;height:100%;left:0;bottom: 0px;background:#9B9090;opacity:0.5;z-index:2;transition:all .4s;transform:scale(1,0);}
+    &:hover:before{content:'';transform:scale(1,1)}
+}
+
+.wrap .main .mainMain .mainMainLeft .leftTop .lefttopBottom .lefttopBottomTop .top .topCenter a img {
+  width: 100%;
+  height:100%;
+}
+.wrap .main .mainMain .mainMainLeft .leftTop .lefttopBottom .lefttopBottomTop .top .topCenter a .green {
+  width: 92%;
+  height: 10px;
+  position: absolute;
+  top: 0px;
+  background: green;
+  opacity: 0.5;
+  display: none;
+}
+.wrap .main .mainMain .mainMainLeft .leftTop .lefttopBottom .lefttopBottomTop .top .topRight {
+  width: 64%;
+  height: 82px;
+  float: right;
+}
+.wrap .main .mainMain .mainMainLeft .leftTop .lefttopBottom .lefttopBottomTop .top .topRight .c1 {
+  color: #474747;
+  font-size: 14px;
+  margin-bottom: 17px;
+}
+.wrap .main .mainMain .mainMainLeft .leftTop .lefttopBottom .lefttopBottomTop .top .topRight .c2 {
+  color: #125f06;
+  font-size: 15px;
+  text-align: right;
+}
+.wrap .main .mainMain .mainMainLeft .leftTop .lefttopBottom .lefttopBottomBottom {
+  width: 100%;
+  height: 24px;
+  margin-bottom: 10px;
+}
+.wrap .main .mainMain .mainMainLeft .leftTop .lefttopBottom .lefttopBottomBottom .left {
+  color: #959595;
+  font-size: 16px;
+  float: left;
+}
+.wrap .main .mainMain .mainMainLeft .leftTop .lefttopBottom .lefttopBottomBottom .right {
+  color: #125f06;
+  font-size: 16px;
+  float: right;
+  font-weight: 800;
+}
+.wrap .main .mainMain .mainMainLeft .leftTop .lefttopBottom .kuang {
+  display: block;
+  widows: 100%;
+  font-size: 16px;
+  color: #fff;
+  padding: 12px 0px;
+  border: 1px solid #125f06;
+  background: #125f06;
+  text-align: center;
+  transition: all .5s ease;
+}
+.wrap .main .mainMain .mainMainLeft .leftTop .lefttopBottom :hover {
+  background: #fff;
+  color: #008000;
+}
+.wrap .main .mainMain .mainMainLeft .leftMain1 {
+  margin-bottom: 50px;
+  width:245px;
+}
+.wrap .main .mainMain .mainMainLeft .leftMain1 .leftmain1_Top {
+  width: 100%;
+  height: 36px;
+  margin-bottom: 30px;
+  border-bottom: 1px dashed #949494;
+}
+.wrap .main .mainMain .mainMainLeft .leftMain1 .leftmain1_Top h3 {
+  width: 40%;
+  height: 35px;
+  border-bottom: 3px solid green;
+  color: green;
+    font-family:'Fredericka the Great';
+  font-weight: 400;
+}
+.wrap .main .mainMain .mainMainLeft .leftMain1 ul {
+  width: 100%;
+  height: 171px;
+  margin-bottom: 10px;
+}
+.wrap .main .mainMain .mainMainLeft .leftMain1 ul li {
+  widows: 100%;
+  height: 24px;
+  margin-bottom: 25px;
+}
+.wrap .main .mainMain .mainMainLeft .leftMain1 ul li a span {
+  font-size: 16px;
+  color: #414141;
+  float: left;
+}
+.wrap .main .mainMain .mainMainLeft .leftMain1 ul li a i {
+  float: right;
+  color: #a9a9a9;
+  font-size: 20px;
+}
+.wrap .main .mainMain .mainMainLeft .leftMain1 ul :hover > a > span {
+  font-weight: 600;
+  color: green;
+  transform: translateX(10px);
+  transition: all 0.5s;
+}
+.wrap .main .mainMain .mainMainLeft .leftMain1 ul :hover > a > i {
+  color: green;
+}
+.wrap .main .mainMain .mainMainLeft .leftMain2 {
+  height: 517px;
+  margin-bottom: 0px;
+}
+.wrap .main .mainMain .mainMainLeft .leftMain2 > .lefttopBottom > .lefttopBottomTop {
+  height: 450px;
+  padding-bottom: 0;
+  margin-bottom: 0;
+  border-bottom: none;
+}
+.wrap .main .mainMain .mainMainLeft .leftMain2 > .lefttopBottom > .lefttopBottomTop > .top .topCenter {
+  padding: 0px;
+  width: 30%;
+}
+.wrap .main .mainMain .mainMainLeft .leftMain2 > .lefttopBottom > .lefttopBottomTop > .top .topCenter a > .green {
+  width: 100%;
+}
+.wrap .main .mainMain .mainMainLeft .leftMain2 > .lefttopBottom > .lefttopBottomTop > .top .topRight .c2 {
+  text-align: left;
+}
+.wrap .main .mainMain .mainMainLeft :hove > a > span {
+  display: block;
+}
+.wrap .main .mainMain .mainMainLeft .leftBottom {
+  height: 377.5px;
+  padding: 40px 20px 50px 20px;
+  box-shadow: 0 5px 5px 0 #c7c7c7;
+}
+.wrap .main .mainMain .mainMainLeft .leftBottom .img {
+  width: 222.5px;
+  text-align: center;
+}
+.wrap .main .mainMain .mainMainLeft .leftBottom .img a {
+  display: block;
+  margin-bottom: 30px;
+}
+.wrap .main .mainMain .mainMainLeft .leftBottom .img a img {
+  width: 100%;
+}
+.wrap .main .mainMain .mainMainLeft .leftBottom .img h2 {
+  font-size: 24px;
+  color: #125f06;
+  font-weight: 800;
+  margin-bottom: 25px;
+}
+.wrap .main .mainMain .mainMainLeft .leftBottom .img .conter {
+  padding: 7px 25px;
+  color: #125f06;
+  border: 1px dashed #125f06;
+  -webkit-transition: all 0.4s ease;
+  display: inline-block;
+  text-align: center;
+  border-radius: 8px;
+  &:hover{background: #125f06;-webkit-transition: all 0.4s ease;color: #fff;}
+}
+.wrap .main .mainMain .mainMainRight {
+  width: 75%;
+  position: relative;
+flex-grow:1;
+}
+.wrap .main .mainMain .mainMainRight .rightTop {
+  width: 97%;
+  height: 40px;
+  margin: 0 auto;
+  padding: 10px 0px;
+  border-top: 1px solid #e3e6e9;
+  border-bottom: 1px solid #e3e6e9;
+  margin-bottom: 30px;
+}
+.wrap .main .mainMain .mainMainRight .rightTop .righttopLeft {
+  width:480px;
+  height: 100%;
+  float: left;
+}
+.wrap .main .mainMain .mainMainRight .rightTop .righttopLeft .left {
+  width: 220px;
+  height: 40px;
+  float: left;
+  margin-right: 20px;
+}
+.wrap .main .mainMain .mainMainRight .rightTop .righttopLeft .left select {
+  width: 100%;
+  height: 100%;
+  background: #F2F2F2;
+  padding-left: 10px;
+  border: 1px solid #e3e6e9;
+  outline: none;
+}
+.wrap .main .mainMain .mainMainRight .rightTop .righttopRight {
+  width: 84px;
+  height: 100%;
+  float: right;
+}
+.wrap .main .mainMain .mainMainRight .rightTop .righttopRight .fl3 {
+  width: 40px;
+  height: 36px;
+  background: #F2F2F2;
+  float: left;
+  text-align: center;
+  line-height: 40px;
+}
+.wrap .main .mainMain .mainMainRight .rightTop .righttopRight .fl3 a > img {
+  width: 18px;
+}
+.wrap .main .mainMain .mainMainRight .rightTop .righttopRight .fl4 {
+  float: right;
+  background: #125f06;
+}
+.wrap .main .mainMain .mainMainRight #getli {
+  width: 100%;
+  height: auto;
+}
+.wrap .main .mainMain .mainMainRight #getli li {
+  width: 30.3%;
+  height: auto;
+  margin: 0px 13px;
+  margin-bottom: 40px;
+  position: relative;
+  float: left;
+&:before{content:"";position:absolute;width:100%;height:78%;left:0;bottom: 87px;background:#9B9090;opacity:0.5;z-index:2;transition:all .4s;transform:scale(1,0);}
+    &:hover:before{content:'';transform:scale(1,1)}
+    &:hover{box-shadow:-10px -10px 0px #125f06;transition:all .5s;}
+
+}
+.wrap .main .mainMain .mainMainRight #getli li img {
+  width: 100%;
+margin-bottom: 25px;
+}
+.wrap .main .mainMain .mainMainRight #getli li .content {
+  width: 100%;
+  height: 58px;
+
+}
+.wrap .main .mainMain .mainMainRight #getli li .content .content_1 {
+  font-size: 16px;
+  color: #474747;
+  height: 24px;
+  line-height: 24px;
+  margin-bottom: 10px;
+}
+.wrap .main .mainMain .mainMainRight #getli li .content .content_2 {
+  font-size: 13px;
+  color: #474747;
+  height: 24px;
+  line-height: 24px;
+  font-weight: 800;
+}
+.wrap .main .mainMain .mainMainRight #getli:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+@media screen and (max-width:1335px){
+    .wrap .main .mainMain .mainMainRight #getli li{margin: 0 9px;}
+    .wrap .main .mainMain .mainMainLeft .leftTop{width:245px;}
+    .wrap .main .mainMain .mainMainLeft{padding: 0px}
+    .wrap .main .mainMain .mainMainRight #getli li .content{margin-bottom: 20px}
+    .wrap .main .mainMain .mainMainRight{width:70%;}
+
+}
+@media screen and (min-width:800px) and (max-width:1190px){
+  .wrap .main .mainMain .mainMainLeft{display: none;}
+  .wrap .main .mainMain:after{content: "";display: block;clear: both;}
+  .wrap .main .mainMain .mainMainRight #getli li{margin:0 10px;}
+  .wrap .main .mainMain .mainMainRight #getul li{width:290px;}
+}
+@media screen and (max-width:799px){
+.wrap .main .mainMain .mainMainLeft{display: none;}
+.wrap .main .mainMain .mainMainRight #getli li{width:100%;}
+.wrap .fixed{display: none;}
+.wrap .footer{display: none;}
+
+}
+.wrap .main .mainMain .mainMainRight #getul {
+  width: 100%;
+  display: none;
+
+}
+.wrap .main .mainMain .mainMainRight #getul li {
+  width: 100%;
+  margin-bottom: 0px;
+  display: -webkit-flex;
+}
+.wrap .main .mainMain .mainMainRight #getul li .left {
+  width: 28%;
+flex-grow: 1;
+  margin-right: 30px;
+  position: relative;
+    &:before{content:"";position:absolute;width:100%;height:100%;left:0;bottom: 0;background:#B4B4B4;opacity:0.5;z-index:2;transition:all .4s;transform:scale(1,0);}
+    &:hover:before{content:'';transform:scale(1,1)}
+    img{width:100%;}
+    &:hover{box-shadow:-10px -10px 0px #125f06;transition:all .3s;}
+}
+.wrap .main .mainMain .mainMainRight #getul li .right {
+  border-bottom: 1px dotted #a4a4a4;
+  width: 68%;
+flex-grow: 1;
+  padding: 40px 0px;
+}
+.wrap .main .mainMain .mainMainRight #getul li .right .content_1 {
+  height: 24px;
+  margin-bottom: 10px;
+  color: #474747;
+}
+.wrap .main .mainMain .mainMainRight #getul li .right .content_2 {
+  height: 24px;
+  color: #474747;
+  font-weight: 800;
+}
+.wrap .main .mainMain .mainMainRight #getul li .right .content_3 {
+  margin-bottom: 40px;
+  color: #474747;
+}
+.wrap .main .mainMain .mainMainRight #getul li .right .content_4 {
+  height: 40px;
+}
+.wrap .main .mainMain .mainMainRight #getul li .right .content_4 a {
+  border: 1px solid #125f06;
+  width: 40px;
+  height:40px;
+  margin-right: 15px;
+  display:block;
+  float: left;
+  text-align: center;
+  line-height: 40px;
+  &:hover{background: #B4B4B4;border: 1px solid #b4b4b4;}
+}
+.wrap .main .mainMain .mainMainRight #getul li .right .content_4 a img {
+  width: 16px;
+  margin-bottom: 0px;
+}
+.wrap .main .mainMain .mainMainRight .rightBottom {
+  width: 100%;
+  height: 42px;
+  background: #f2f2f2;
+}
+.wrap .main .mainMain .mainMainRight .rightBottom .left {
+  width: 25%;
+  color: #959595;
+  float: left;
+  text-align: center;
+  line-height: 42px;
+}
+.wrap .main .mainMain .mainMainRight .rightBottom .right {
+  color: #959595;
+  float: right;
+  width: 36%;
+  height: 42px;
+}
+.wrap .main .mainMain .mainMainRight .rightBottom .right ul {
+  width: 100%;
+  height: 42px;
+}
+.wrap .main .mainMain .mainMainRight .rightBottom .right ul li {
+  float: left;
+  width: 14%;
+  height: 42px;
+  line-height: 42px;
+text-align: center;
+}
+.wrap .main .mainMain .mainMainRight .rightBottom .right ul li a {
+  color: #959595;
+}
+.wrap .main .mainMain .mainMainRight .rightBottom .right ul li:nth-child(3) > a {
+  color: green;
+}
+.wrap .main #map{width:100%;height:480px;}
+
+.wrap .fixed{
+      width:40px;height:40px;border: 2px solid #125F06;position: fixed;right:20px;bottom:100px;line-height: 40px;text-align: center;z-index: 99;
+      .a{
+          display: block;width:100%;height: 100%;
+      }
+}

@@ -65,6 +65,7 @@ $(function(){
 
 	var flog = 4 ;
 	var width = $('#slider').outerWidth(true);
+	$('.best_banner_content').css({'left':-4*width+'px','width':12*width+'px'});
 	$('.button_Previous').click(function(){
 		flog--;
 		var num = flog*(-width)+'px';

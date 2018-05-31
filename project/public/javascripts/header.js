@@ -1,4 +1,6 @@
 $(function(){
+	var height = $(window).height();
+	var width = $(window).width();
 	$(window).scroll(function(){
 		var scrollTop = $(window).scrollTop();
 		// console.log(scrollTop);
@@ -8,4 +10,5 @@ $(function(){
 			$('#header').css('box-shadow','none');
 		}
 	})
+	// $('.zhezhao').css({'width':width,'height':height});
 })
