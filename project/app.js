@@ -12,6 +12,8 @@ var indexRouter=require('./routes/index');
 var aboutRouter=require('./routes/about');
 var shopDetailRouter=require('./routes/shopDetail');
 var galleryRouter=require('./routes/gallery');
+var shopCarRouter=require('./routes/shopCar');
+var shop_tabRouter=require('./routes/shop_tab');
 
 
 
@@ -36,7 +38,8 @@ app.use('/index',indexRouter);
 app.use('/about', aboutRouter);
 app.use('/shopDetail',shopDetailRouter);
 app.use('/gallery',galleryRouter);
-
+app.use('/shopCar',shopCarRouter)
+app.use('/shop_tab',shop_tabRouter)
 
 
 // catch 404 and forward to error handler

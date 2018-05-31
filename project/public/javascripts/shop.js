@@ -6,17 +6,22 @@ $(function(){
 			type:'post',
 			data:{},
 			success:function(data){
-				// console.log(data);
 				for(var i=0;i<data.length;i++){
 					var li = $('.getli');
-					$(li[i]).children('img').attr('src','../images/'+data[i].img);
+					// console.log(data[i].id)
+					$(li[i]).attr('name_id',data[i].id);
+					$(li[i]).children('a').children('img').attr('src','../images/'+data[i].img);
 					// $(li[i]).children('div').eq(0).text(data[i].price).siblings();\
-					$(li[i]).children('div').find('p:first').text(data[i].price).siblings().text(data[i].miaoshu);
+					$(li[i]).children('a').children('div').find('p:first').text(data[i].price).siblings().text(data[i].miaoshu);
 				}
 			}
 		})
 	}
-
+	$('.getli').on('click',function(){
+		var num=$(this).attr('name_id');
+		console.log(num);
+		$('.getli a').attr('href','/shopDetail?num='+num);
+	})
 	//tab切换
 	$('.fl4').click(function(){
 		$('#getli').show();
@@ -30,6 +35,22 @@ $(function(){
 		$('#getli').hide();
 		$('#fl3').css('background','#125f06');
 		$('.fl4').css('background','none')
+		$.ajax({
+			url:'/shop_tab',
+			type:'get',
+			data:{},
+			success:function(data){
+				console.log(data)
+				for(var i=0;i<data.length;i++){
+					var li = $('.get_data');
+					
+					$(li[i]).find('.imgs').attr('src','../images/'+data[i].img);
+					
+					$(li[i]).find('.content_1').text(data[i].price)
+					$(li[i]).find('.content_2').text(data[i].miaoshu)
+				}
+			}
+		});
 	})
 
 })

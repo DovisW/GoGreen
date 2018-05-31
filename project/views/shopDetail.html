@@ -46,22 +46,29 @@
 	</div>
 	<div class="container" style="clear: both;">
 		<div class="row" >
-			<div class="col-md-3 Featured ">
+			<div class="col-md-3 Featured " >
 				<div class="title">
 					<h3>Featured</h3>
 					<a href="#">View Cart<span>>></span></a>
 				</div>
-				<div class="show flearfix">
-					<i class=" icon-remove"></i>
-					<div class="afterColor"><img alt=""></div>
-					<p class="p1"></p>
-					<p style="margin: 0 ;height: 24px; text-align: right;line-height: 24px; color: #125F06;" class="p2"></p>
-				</div>
-				<div class="show flearfix">
+				<div id="shopCarBar">
+					
+
+					<!-- <div class="show flearfix" >
+						<i class=" icon-remove"></i>
+						<div class="afterColor"><img alt="" src=""></div>
+						<p class="p1"></p>
+						<p style="margin: 0 ;height: 24px; text-align: right;line-height: 24px; color: #125F06;" class="p2"></p>
+					</div> -->
+					
+					
+				
+				<!-- <div class="p1 flearfix">
 					<i class="icon-remove"></i>
 					<div class="afterColor"><img alt=""></div>
 					<p class="p1"></p>
 					<p style="margin: 0 ;height: 24px; text-align: right;line-height: 24px; color: #125F06;" class="p2"></p>
+				</div> -->
 				</div>
 				<div class="wrapper-total clearfix">
 					<span class="text-total fl">SUBTOTAL:</span>
@@ -124,17 +131,18 @@
 			<div class="col-md-9 shopCar container">
 				<div class="row">
 					<div class="col-sm-4 links-pic col-xs-12">
-						<img src="images/about_img/pic1.jpg" alt="">
+						<img src="images/<%=url%>" alt="">
 					</div>
 					<div class="col-sm-8 pic-des col-xs-12" id="pic-des" >
-						<p class="slider-money">$15.00</p>
-						<h3>Orange and Raspberry Detox Water</h3>
+						<p class="slider-money"><%=text%></p>
+						<h3><%=miaoshu%></h3>
 						<p class="slider-text">On hot summer days, staying hydrated is the most important step to keeping your cells healthy and running the way they should. Personally, I think water is a little boring, so I like to take summer drinks to the next level, improving their nutritional value and their flavor using healing spices and roots, fresh juices, and refreshing herbal teas.</p>
 						<div class=" list-btn-shop fl">
-							<button class="minus fl">-</button >
-							<input type="text fr" class="showText" value="1">
-							<button class="plus fr">+</button>
+							<button class="minus fl" id="minus">-</button >
+							<input type="text fr" class="showText" value="0" id="showText">
+							<button class="plus fr" id="plus">+</button>
 						</div>
+						<input type="hidden" value="<%=id%>" id="shopCarData">
 						<button class="btnAdd fl">ADD TO CART</button> 
 					</div>
 					
@@ -260,9 +268,9 @@
 					</ul>
 				</div>				
 	</div>
-	<div class="footer">
-			<div class="footer_top" style="clear: both;">
-				<div class="footerToprow" style="clear: both; margin: 0"> 
+	<div class="footer" >
+			<div class="footer_top " style="clear: both;">
+				<div class="footerToprow" style="clear: both;"> 
 					<div class="footer_logo" style="clear: both;">
 						<a href="">
 							<img src="images/index/header/ft1.png" alt="">

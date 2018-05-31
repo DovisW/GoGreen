@@ -3,30 +3,22 @@ var router = express.Router();
 var mysql = require('mysql');
 var url=require('url');
 var connection = mysql.createConnection({
-  host     : 'qdm19023448.my3w.com',//主机名
-  user     : 'qdm19023448',//用户名
-  password : 'zeiyeaiq',//密码
+  host     : 'qdm19023448.my3w.com',
+  user     : 'qdm19023448',
+  password : 'zeiyeaiq',
   database : 'qdm19023448_db',
   insecureAuth:true
 });
 connection.connect();
-// console.log('数据库连接成功');
 router.get('/', function(req, res, next) {
-  res.render('shopDetail', { title: 'Express' });
-  url.parse(req);
-  // console.log(req);
+  var num=req.query.num
+  var Sql='SELECT * FROM go_shop where id='+num;
+  connection.query(Sql,function(err, result){
+  	var url=result[0].img;
+  	var text=result[0].price;
+    var miaoshu=result[0].miaoshu;
+  	res.render('shopDetail',{url:url,text:text,miaoshu:miaoshu,id:num});
+  })
 });
-router.post('/', function(req, res, next) {
-	var  Sql = 'SELECT * FROM go_goods';
-	connection.query(Sql,function (err, result) {
-	        if(err){
-	         // console.log('[SELECT ERROR] - ',err.message);
-	         return;
-	        }   
-	        console.log(result)
-		res.send(result);   
-	});
-});
-
 module.exports = router;
 
