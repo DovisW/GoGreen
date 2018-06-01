@@ -105,7 +105,69 @@ $(function(){
 					}
          			});
          		});
-         		
+         //fei		
+        $.ajax({
+                url:'/pl',
+                type:'post',
+                data:{},
+                success:function(data){
+                // console.log(data);
+                    var box = $('.ReviewsBox');
+                    // console.log(box);
+                    var xing = data[0].xing;
+                    $(box).find('h4').text(data[0].name);
+                    $(box).find('p').text(data[0].neirong);
+                    var classi = $('.xing1>i')
+                    // console.log(classi)
+                        for (var i=0;i<xing;i++){
+                            $(classi[i]).removeClass('icon-star-empty fl').addClass('icon-star fl');
+                            // $(classii[i]).removeClass('icon-star-empty fl').addClass('icon-star fl');
+
+                        }
+                        // for (var j=0;j<xing;j++){
+                        //  $(classii[j]).removeClass('icon-star-empty fl').addClass('icon-star fl');
+                        // }
+                }       
+            });
+
+        var li = $('.right>li')
+        var xing;
+        for(var i=0;i<li.length;i++){
+            $(li[i]).on('click',function(){
+                $(this).children().removeClass('icon-star-empty fl').addClass('icon-star fl').parent().siblings().children().removeClass('icon-star fl').addClass('icon-star-empty fl');
+                 xing = $(this).attr('index');
+            });
+        }
+        
+
+        $('#inputSub').on('click',function(){
+            var inp = $('.left>input').val();
+            var inpu = $('.right>input').val();
+            var text = $('#text1').val();
+            $.ajax({
+                url:'/sdtail',
+                type:'get',
+                data:{xing:xing,inp:inp,inpu:inpu,text:text},
+                success:function(data){
+                    console.log(data);
+                    var box1 = $('.div1');
+                    $(box1).find('h4').text(data[0].name);
+                    $('.neirong').text(data[0].text);
+                    var xing1 =Number(data[0].xing);
+                    var font=$('div.xing2>i');
+                    // console.log(xing1);
+                    for(let a=0;a<xing1;a++){
+                        console.log(a);
+                        console.log(font[a]);
+                        $(font[a]).removeClass('icon-star-empty fl').addClass('icon-star fl');
+                        // $(xing2[i]).children().removeClass('icon-star-empty fl').addClass('icon-star fl').parent().siblings().children().removeClass('icon-star fl').addClass('icon-star-empty fl');
+                    }
+                },
+                error:function(err){
+                    return console.log(err);
+                }       
+            });
+        })
          		
          		
          		

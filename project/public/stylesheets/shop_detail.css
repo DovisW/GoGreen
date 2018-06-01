@@ -195,6 +195,9 @@ button {
 .Featured .Categories ul {
   width: 100%;
 }
+.shopCar .Reviews .Write .right i{
+  color:#FFDE00;
+}
 .Featured .Categories ul li {
   height: 24px;
   text-align: left;

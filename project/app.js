@@ -14,6 +14,8 @@ var shopDetailRouter=require('./routes/shopDetail');
 var galleryRouter=require('./routes/gallery');
 var shopCarRouter=require('./routes/shopCar');
 var shop_tabRouter=require('./routes/shop_tab');
+var sdtailRouter=require('./routes/sdtail');
+var plRouter=require('./routes/pl');
 
 
 
@@ -38,9 +40,10 @@ app.use('/index',indexRouter);
 app.use('/about', aboutRouter);
 app.use('/shopDetail',shopDetailRouter);
 app.use('/gallery',galleryRouter);
-app.use('/shopCar',shopCarRouter)
-app.use('/shop_tab',shop_tabRouter)
-
+app.use('/shopCar',shopCarRouter);
+app.use('/shop_tab',shop_tabRouter);
+app.use('/sdtail', sdtailRouter);
+app.use('/pl',plRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
